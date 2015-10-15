@@ -244,10 +244,9 @@ Configure the HDF5 version
 
         cd /usr/lib/x86_64-linux-gnu
 
-* Link the system version of HDF5 from 7 to 9:
+* Set LD_LIBRARY_PATH for libraries in Anacoda, such as libhdf5.so.10, libhdf5_hl.so.10:
 
-        sudo ln -s libhdf5.so.7 libhdf5.so.9
-        sudo ln -s libhdf5_hl.so.7 libhdf5_hl.so.9
+        export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/ubuntu/anaconda/lib" >> ~/.bashrc
 
 * Update the "Dynamic Linker":
 
